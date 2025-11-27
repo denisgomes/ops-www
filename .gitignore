@@ -9,6 +9,7 @@ wheels/
 _website/
 .doctrees/
 jupyter_execute/
+.ipynb_checkpoints
 
 # Virtual environments
 .venv

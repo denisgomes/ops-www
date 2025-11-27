@@ -3,17 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Denis Gomes's Blog!
+Welcome to Denis Gomes' Blog!
 ==========================================
 
-Hello World! Find more about me here: :ref:`about`
+Hello Pipe Stress World! Find more about me here: :ref:`about`
 
 
 Here is a list of most recent posts:
 
 .. postlist:: 5
    :excerpts:
-
 
 .. `toctree` directive, below, contains list of non-post `.rst` files.
    This is how they appear in Navigation sidebar. Note that directive

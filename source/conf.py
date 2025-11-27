@@ -34,6 +34,7 @@ html_title = "Pipe Stress Blog"
 extensions = ['ablog',
               'sphinx.ext.napoleon',
               'sphinx.ext.mathjax',
+              'sphinx.ext.intersphinx',
               'jupyter_sphinx',
               'nbsphinx',
 ]
@@ -43,10 +44,26 @@ jupyter_sphinx_thebelab_config = {
     # 'bootstrap': True,
     'requestKernel': True,
     'binderOptions': {
-        'repo': "denisgomes/psi",
+        'repo': "denisgomes/ops-www",
     },
 }
 
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
+
+exclude_patterns = [
+    "posts/*/.ipynb_checkpoints/*",
+    ".github/*",
+    ".history/*",
+    "github_submodule/*",
+    "LICENSE.md",
+    "README.md",
+    "_build/*",
+    "CITATION.rst",
+    ".tox/*",
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -54,7 +71,8 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store',
+                    'source/posts/.ipynb_checkpoints/*']
 
 
 # -- Options for HTML output -------------------------------------------------
