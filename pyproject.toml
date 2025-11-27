@@ -1,13 +1,16 @@
 [project]
 name = "ops-www"
 version = "0.1.0"
-description = "Add your description here"
+description = "Pipe stress blog."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "ablog>=0.11.12",
+    "ghp-import>=2.1.0",
     "handcalcs>=1.10.0",
+    "ipywidgets>=8.1.8",
     "jupyter-sphinx>=0.5.3",
+    "matplotlib>=3.10.7",
     "nbsphinx>=0.9.7",
     "pint>=0.25.2",
 ]

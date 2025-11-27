@@ -25,4 +25,4 @@ Here is a list of most recent posts:
 .. toctree::
    :hidden:
 
-   posts/first-post.rst
+   about.rst
