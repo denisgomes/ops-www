@@ -1,0 +1,211 @@
+.. post:: Nov 28, 2025
+    :author: Denis Gomes
+    :tags: ASME, B36.10M, Pipe Table
+    :category: Standard, Specification
+    :exclude:
+
+    The fundamentals of piping - The Pipe.
+
+
+===============
+What is Piping?
+===============
+Upon casual inspection it is evident that piping surrounds us and touches every
+aspect our daily lives, from the moment we wake up and turn on the lights to
+the when we brush our teeth before heading to bed. We all rely on piping and
+piping systems implicitly or explicitly in some way or another every day.
+Fundamentally, a piping system is used to transport fluid from one location to
+another. They are essential to every facet of modern society, from nuclear
+power plants that provide the electricity to power our homes to residential and
+commercial building plumbing.
+
+Piping systems consists of pipes, fittings, flanges, valves, and other pressure
+retaining components used to compose a piping layout. A piping system also
+consists of non pressure retaining components such as pipe supports and
+hangers. A piping system is sometimes loosely referred to as just "piping".
+
+
+Standard
+========
+A pipe is the basic building block of all piping systems. It is a cylinderical
+hollow cross section conforming to the following ASME Standards:
+
+* ASME B36.10M - Welded and Seamless Wrought Steel Pipe
+* ASME B36.19 - Stainless Steel Pipe
+
+ASME B36.10M is a standard specification for welded and seamless wrought steel
+pipes which are used for high or low temperatures and pressures. This standard
+is also extensively used for welded and seamless pipes made from other ferrous
+and non-ferrous alloys such as nickel, titanium, zirconium, tantalum, aluminum
+and copper, etc. Similarly, the ASME B36.19 is the standard specification for
+stainless steel pipes. All materials shall be covered in corresponding ASTM or
+ASME specifications.
+
+Size
+----
+The cross section of a pipe is fully defined in the ASME and equivalent
+international standards by the outer diameter, given by the Nominal Pipe Size
+(NPS) and the thickness (or pipe wall), given by the schedule (SCH). It is
+important to note that pipe sizes up to and including 12 inches have an actual
+outer diameter slighly larger than the NPS. For pipe sizes 14 inches and above,
+the NPS is equal to the actual outer diameter. As a rule of thumb, odd number
+pipe sizes, such as 3, 5, 7, etc., are typically not found off the shelf and
+should be avoided if possible. Refer to :ref:`Pipe Table <pipe-table-label>`
+for a listing of various sizes defined in the standards.
+
+Thickness
+---------
+The SCH of a pipe depends on the pressure it must be capable of handling. For
+low to modern pressure systems, a standard (STD) or standard weight (STD WT)
+pipe wall may suffice. For high pressure systems a thicker wall, such as extra
+strong (XS) or extra heavy (XH) schedule may be required. Extreme pressure
+service may call for extra strong (XXS) or double extra heavy (XXH). It is not
+unusual for certain high pressure-temperature systems to call out custom pipe
+sizes and schedules outside the ASME or equivalent standards. These special
+cases should be considered on a case by case basis because the cost of custom
+pipe wall is generally more expensive and results in increased manufacturing
+times. On that note, if custom sizes are required, it may be more economical to
+utilize ID controlled piping to reduce the overall wall thickness. However, the
+designer has to be mindful of the potential costs associated with the
+non-standard OD, for example, non-standard pipe support clamps and connection
+interfaces with standard size piping components. Refer to :ref:`Pipe Table
+<pipe-table-label>` for a listing of various schedules and thicknesses defined
+in the standards.
+
+
+Manufacturing
+=============
+There are several different types/forms of pipes, dependent on how the shape is
+manufactured. The following are the most common types/forms used in the power
+industry:
+
+* Seamless
+* Seam welded
+* Forged
+
+Seamless
+--------
+A common appoach to produce a seamless pipe is to pierce a billet to the
+desired tube shell and pushing a mandrel through it to stretch the billet to
+the required length. Pipes created in this manner are referred to as seamless
+pipe because they lack welding seams or joints. The inspection requirements for
+these pipes are minimal compared to their seam welded counterpart. However,
+seamless piping requires the consideration of manufacturing mill tolerance
+(typically 12.5%), which is a direct result of potential inaccuray of the
+milling process, i.e. the mandrel might penetrate the billet in a slight angle.
+As a result, seamless pipe will tend to be slightly thicker than its
+counterpart.
+
+.. raw:: html
+
+    <iframe width="100%" height=500
+        src="https://www.youtube.com/embed/uvURCXAGkYQ"
+        title="Seamless pipe manufacturing is revolutionizing industries"
+        allowfullscreen>
+    </iframe>
+
+Seam Welded
+-----------
+The hollow cylinderical section can also be produced by taking a flat plate,
+rolling it and welding the ends together. This kind of pipe is referred to as
+being seam welded. The welded longitudinal seam is an area for potential
+failure and thus proper inspection and Non-Destructive Testing (NDT) must be
+performed accordingly. Seam-related corrosion can also be an issue for highly
+corrosive environments. However, seam welded piping tends to be cheaper than
+their seamless counterpart, avaiable of a variety of larger sizes and quick to
+manufacture. For seam welded pipe the rolling process can be performed either
+on a hot or cold plate material.
+
+Hot Rolled
+^^^^^^^^^^
+Hot rolling involves heating the material and then rolling it into shape. It
+is heated in a furnace and passed through a series of rolling mills to get
+the standard size and shape. Finally, the steel is gradually cooled to room
+temperature and the ends are welded together.
+
+.. raw:: html
+
+    <iframe width="100%" height=500
+        src="https://www.youtube.com/embed/8bpTqbB_cEs"
+        title="Hot rolled 42crmo steel pipe manufacturing process, quenched thick wall seamless steel pipe in stock"
+        allowfullscreen>
+    </iframe>
+
+
+Cold Rolled
+^^^^^^^^^^^
+Cold rolling is done at room temperature. The material is first rolled to the
+required size and shape. It is then then annealed, i.e. heat treated, to
+relieve internal stresses and improved ductility. Finally, the ends are welded
+together.
+
+
+.. raw:: html
+
+    <iframe width="100%" height=500
+        src="https://www.youtube.com/embed/jCzJpGYVlGY"
+        title="The Cold Rolling Process of Steel Sheets Explained"
+        allowfullscreen>
+    </iframe>
+
+
+.. csv-table:: Summary Table Hot vs Cold Rolled
+    :header: "Feature", "Hot Rolled Pipe", "Cold Rolled Pipe"
+    :widths: 10 15 15
+
+    *Temperature*, "Above metal recrystallization", room
+    *Properties*, "Lower strength, higher ductility", "Higher strength, lower ductility"
+    *Finish*, Rough, Smooth
+    *Tolerance*, "Less precise", "More precise"
+    *Application*, "Structural components, pipelines, heavy machines", "Precision applications, auto parts, furniture"
+    *Cost*, "Cheaper", "More expensive"
+
+Forged
+------
+.. raw:: html
+
+    <iframe width="100%" height=500
+        src="https://www.youtube.com/embed/EjplD5e0P3w"
+        title="Inside the factory Team Handling Red-Hot Steel With Zero Fear #process #forging #machine #factory"
+        allowfullscreen>
+    </iframe>
+
+
+.. _pipe-table-label:
+
+Pipe Table
+==========
+
+.. thebe-button:: Make Live
+
+.. jupyter-execute::
+    :hide-code:
+
+    import os
+    import pandas as pd
+
+    # Permanently changes the pandas settings
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
+    pd.set_option('display.max_colwidth', None)
+
+    import ipywidgets as widgets
+    from IPython.display import display, HTML
+
+    POST_DIR = os.path.join("posts", "2025")
+
+    df = pd.read_csv(os.path.join(POST_DIR, "pipe_table.csv"))
+
+    def filter_df(NPS):
+        if NPS == "All":
+            display(HTML(df.to_html(index=False)))
+        else:
+            display(HTML(df[df["NPS"] == NPS].to_html(index=False)))
+
+    NPS_dropdown = widgets.Dropdown(
+        options = ["All"] + list(df["NPS"].unique()),
+        description="Select NPS: "
+        )
+
+    widgets.interact(filter_df, NPS=NPS_dropdown);

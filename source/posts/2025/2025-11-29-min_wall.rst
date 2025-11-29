@@ -1,0 +1,79 @@
+.. post:: Nov 29, 2025
+    :author: Denis Gomes
+    :tags: Min Wall
+    :category: Pressure
+    :exclude:
+
+    Determining the Required Pipe Minimum Wall Thickness.
+
+=================
+Pipe Minimum Wall
+=================
+
+.. jupyter-execute::
+    :hide-code:
+
+    import handcalcs
+    import handcalcs.render
+    handcalcs.set_option("use_scientific_notation", True)
+    handcalcs.set_option("underscore_subscripts", True)
+    handcalcs.set_option("preferred_string_formatter", "~L")
+    handcalcs.set_option("greek_exclusions", ["psi"])
+    handcalcs.set_option("latex_block_start", "$")
+    handcalcs.set_option("latex_block_end", "$")
+    handcalcs.set_option("math_environment_start", "aligned")
+    handcalcs.set_option("math_environment_end", "aligned")
+    handcalcs.set_option("custom_symbols", {"Delta_T1": "\\Delta{T_1}",
+                                            "Delta_T2": "\\Delta{T_2}",
+                                           })
+
+    from pint import UnitRegistry
+    from pint import set_application_registry
+    u = UnitRegistry()
+    set_application_registry(u)
+    u.formatter.default_format = "~P"
+
+    # initialize units
+    psi = u.psi
+    lbf = u.lbf
+    inch = u.inch
+    ft = u.feet
+    degF = u.ΔdegF
+    MPa = u.MPa
+
+
+.. math::
+    :label: min_wall
+
+    t_m = \frac{PD}{2(S_m+yP)} + a
+
+Where:
+    .. math:: t_m = \text{Minimum required thickness} [inch]
+    .. math:: P = \text{Design pressure} [psi]
+    .. math:: S_m = \text{Material allowable at design temperature} [psi]
+    .. math:: D = \text{Pipe outer diameter} [inch]
+    .. math:: y = \text{Factor} (default=0.4)
+
+
+Sample Calculation
+==================
+
+Inputs
+------
+
+.. jupyter-execute::
+    :hide-code:
+
+    %%render symbolic
+    P = 1000*psi;       # system design pressure
+    D = 12.75*inch;     # pipe diameter
+    t = 0.375*inch;     # pipe thickness
+
+Results
+-------
+
+.. jupyter-execute::
+    :hide-code:
+
+    %%render long
+    sigma_p = (P*D)/(2*t);  # pressure stress [hoop]

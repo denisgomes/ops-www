@@ -1,8 +1,14 @@
+# ablog used for local dev and sphinx build for upload
+
+
 default:
     just --list
 
 install:
     uv sync
+
+    # requirements needed for thebelab/mybinder
+    uv pip freeze >> requirements.txt
 
 clean: clean-ablog
     -rm -r build

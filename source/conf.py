@@ -26,6 +26,14 @@ author = 'Denis Gomes'
 # "<project> v<release> documentation".
 html_title = "Pipe Stress Blog"
 
+
+blog_baseurl = "https://openpipestress.com/"
+
+blog_authors = {
+    "Denis Gomes": ("Denis Gomes", None),
+}
+
+
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -121,7 +129,7 @@ html_theme_options = {
     'github_user': 'denisgomes',
     'github_repo': 'ops-www',
     'description': 'The pipe stress blog.',
-    'fixed_sidebar': False,
+    'fixed_sidebar': True,
     'github_banner': True,
     'github_button': True,
     'analytics_id': 'UA-155102137-1',

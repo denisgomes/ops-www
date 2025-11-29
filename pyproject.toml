@@ -8,10 +8,12 @@ dependencies = [
     "ablog>=0.11.12",
     "ghp-import>=2.1.0",
     "handcalcs>=1.10.0",
+    "ipython>=9.7.0",
     "ipywidgets>=8.1.8",
     "jupyter>=1.1.1",
     "jupyter-sphinx>=0.5.3",
     "matplotlib>=3.10.7",
     "nbsphinx>=0.9.7",
+    "pandas>=2.3.3",
     "pint>=0.25.2",
 ]
